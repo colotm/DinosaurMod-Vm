@@ -103,16 +103,19 @@ class Extension {
                     text: 'clear snow',
                     blockType: BlockType.COMMAND
                 },
-                // {
-                //     opcode: 'addPresent',
-                //     text: 'add present',
-                //     blockType: BlockType.COMMAND
-                // },
-                // {
-                //     opcode: 'removePresents',
-                //     text: 'remove all presents',
-                //     blockType: BlockType.COMMAND
-                // },
+                 {
+                
+                  opcode: 'addPresent',
+                  text: 'add present',
+            
+                     
+                blockType: BlockType.COMMAND
+                },
+                {
+                  opcode: 'removePresents',
+                   text: 'remove all presents',
+                blockType: BlockType.COMMAND
+                 },
                 {
                     opcode: 'addLight',
                     text: 'add light',
@@ -123,6 +126,11 @@ class Extension {
                     text: 'remove all lights',
                     blockType: BlockType.COMMAND
                 },
+                /*{
+                    opcode: 'fit',
+                    text: 'is fit chirtsma',
+                    blockType: BlockType.BOOLEAN
+                },*/
             ]
         };
     }
