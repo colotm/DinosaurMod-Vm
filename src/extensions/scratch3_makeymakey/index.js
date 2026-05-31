@@ -188,6 +188,21 @@ class Scratch3MakeyMakeyBlocks {
                             defaultValue: KEY_ID_SPACE
                         }
                     }
+                },           {
+                    opcode: 'whenMakeyKeyHit',
+                    text: formatMessage({
+                        id: 'makeymakey.whenKeyHit',
+                        default: 'when [KEY] key hit',
+                        description: 'when a keyboard key is hit'
+                    }),
+                    blockType: BlockType.HAT,
+                    arguments: {
+                        KEY: {
+                            type: ArgumentType.STRING,
+                            menu: 'KEY',
+                            defaultValue: KEY_ID_SPACE
+                        }
+                    }
                 },
                 {
                     opcode: 'whenCodePressed',
@@ -212,6 +227,21 @@ class Scratch3MakeyMakeyBlocks {
                         id: 'makeymakey.isKeyPressed',
                         default: 'is [KEY] key pressed',
                         description: 'is a keyboard key is pressed'
+                    }),
+                    blockType: BlockType.BOOLEAN,
+                    arguments: {
+                        KEY: {
+                            type: ArgumentType.STRING,
+                            menu: 'KEY',
+                            defaultValue: KEY_ID_SPACE
+                        }
+                    }
+                },{
+                    opcode: 'isMakeyKeyHit',
+                    text: formatMessage({
+                        id: 'makeymakey.isKeyHit',
+                        default: 'is [KEY] key hit',
+                        description: 'is a keyboard key is hit'
                     }),
                     blockType: BlockType.BOOLEAN,
                     arguments: {
