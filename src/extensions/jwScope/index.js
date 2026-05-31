@@ -116,9 +116,9 @@ class Extension {
                     },
                 },
                 {
-                    opcode: "change",
+                    opcode: "reduce",
                     blockType: BlockType.COMMAND,
-                    text: "change [NAME] by [VALUE]",
+                    text: "reduce [NAME] by [VALUE]",
                     arguments: {
                         NAME: {
                             type: ArgumentType.STRING,
@@ -177,7 +177,6 @@ class Extension {
                     text: "current scope",
                     hideFromPalette: !vm.runtime.ext_jwArray,
                     blockType: BlockType.REPORTER,
-                    blockShape: BlockShape.SQUARE,
                     ...(vm.jwArray ? vm.jwArray.Block : {})
                 },
                 {
@@ -185,7 +184,6 @@ class Extension {
                     text: "all scopes",
                     hideFromPalette: !vm.runtime.ext_jwArray,
                     blockType: BlockType.REPORTER,
-                    blockShape: BlockShape.SQUARE,
                     ...(vm.jwArray ? vm.jwArray.Block : {})
                 }
             ]
