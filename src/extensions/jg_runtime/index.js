@@ -8,7 +8,9 @@ const Color = require('../../util/color');
 const noopSwitch = { isNoop: true };
 
 // ShovelUtils
-let fps = 0;
+
+
+
 
 /**
  * Class for Runtime blocks
