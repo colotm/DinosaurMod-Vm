@@ -425,7 +425,7 @@ class Scratch3Text2SpeechBlocks {
                     opcode: 'speakAndWait',
                     text: formatMessage({
                         id: 'text2speech.speakAndWaitBlock',
-                        default: 'speak [WORDS]',
+                        default: 'speak [WORDS] and wait',
                         description: 'Speak some words.'
                     }),
                     blockType: BlockType.COMMAND,
